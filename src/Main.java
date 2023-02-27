@@ -8,6 +8,7 @@ public class Main {
         task6();
         task7();
         task8();
+        task9();
     }
 
     public static void task1() {
@@ -64,6 +65,17 @@ public class Main {
         int deposit = 29000;
         int total = 0;
         for ( int i = 0; i < 12; i++ ) {
+            total = total + deposit;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
+        }
+    } // End of task
+
+    public static void task9() {
+        System.out.println("Задача 9");
+        float deposit = 29000f;
+        float total = 0f;
+        for ( int i = 0; i < 12; i++ ) {
+            total = total + total * 0.01f;
             total = total + deposit;
             System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей");
         }
